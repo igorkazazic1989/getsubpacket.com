@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { font-feature-settings: "tnum" 0; }
+  h1, h2, h3 { font-family: var(--font-display), "Arial Narrow", sans-serif; letter-spacing: -0.005em; }
+  :focus-visible { outline: 2px solid #F2C230; outline-offset: 2px; }
+  a { text-underline-offset: 3px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+.prose-body p { margin-bottom: 1rem; line-height: 1.65; }
+.prose-body h2 { font-size: 1.75rem; font-weight: 700; margin: 2.25rem 0 0.75rem; line-height: 1.1; }
